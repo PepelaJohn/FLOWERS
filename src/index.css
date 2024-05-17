@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .max-width {
+    @apply max-w-[1920px];
+  }
+  .common-padding {
+    @apply easeinOut max-[1400px]:px-[50px] max-sm:px-[15px];
+  }
+  .max-w-large {
+    @apply max-w-[1400px];
+  }
+  .bg-border {
+    @apply border-2 bg-white border-gray-100;
+  }
+  .bdb {
+    @apply backdrop-blur-small;
+  }
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+
+
+.nav-height::before {
+  content: "";
+  height: 100px;
+  width: 100%;
+  display: block;
+}
+
+.easeinOut {
+  transition: all ease-in-out 0.5s;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* width */
+.scrollbar-styled::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.scrollbar-styled::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  display: none;
+}
+
+/* Handle */
+.scrollbar-styled::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+.scrollbar-styled::-webkit-scrollbar-thumb:hover {
+  background: #686868;
+}
+
+.search:hover {
+  form {
+    display: block;
+  }
+}
+.right-00 {
+  right: 0;
+}
+
+.right-100 {
+  right: -110%;
+}
+.static-none {
+  position: relative;
+}
+
+.btn {
+  position: relative;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.w-f {
+  width: 100%;
+}
+
+.btn::before {
+  content: "";
+  background: #e72463;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: all ease-in-out 0.3s;
+}
+
+.btn:hover::before {
+  right: 0;
+}
+.easeinOut1 {
+  transition: all ease-in-out 3s;
+}
+.backdrop-blur-small {
+  backdrop-filter: blur(5px) !important;
+}
+.hov:hover {
+  .show {
+    bottom: 0;
+  }
+  .disp {
+    display: flex;
+  }
+}
+
+#w-00 {
+  width: 0 !important;
+}
